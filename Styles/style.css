@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: quicksand;
+}
+/* shared style */
+.gray {
+  color: rgb(254, 163, 1);
+}
+.blue {
+  color: rgb(93, 88, 239);
+}
+.medium-blue {
+  color: rgb(1, 172, 253);
+}
+.light-blue {
+  color: rgb(5, 212, 223);
+}
+.white {
+  color: rgb(255, 255, 255);
+}
+.btn-primary {
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+}
+/* header style */
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: (247, 247, 247);
+}
+/* navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu-bar-span {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+.nav-content {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+.nav-list {
+  list-style: none;
+  margin-right: 2rem;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nav-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-content .btn-primary {
+  background: rgb(254, 163, 1);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+.border {
+  display: none;
+}
+
+/* banner design */
+.banner-content {
+  grid-area: banner-content;
+  margin-right: 70px;
+}
+.banner-image {
+  grid-area: banner-image;
+}
+.banner {
+  display: grid;
+  grid-template-areas: "banner-content banner-image";
+  align-items: center;
+  margin-bottom: 60px;
+}
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  margin-bottom: 24px;
+}
+.banner-description {
+  color: rgb(17, 17, 17);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+.banner .btn-primary {
+  background-color: black;
+}
+/* responsive styles */
+@media screen and (max-width: 576px) {
+  .nav-title,
+  .nav-content-list,
+  .nav-content > .btn-primary {
+    display: none;
+  }
+  .menu-bar {
+    display: flex;
+  }
+  .navbar {
+    margin: 0;
+    padding: 20px;
+  }
+  .border {
+    display: block;
+    border-top: 1px solid orange;
+    margin-bottom: 10px;
+  }
+  .banner {
+    grid-template-areas:
+      "banner-image"
+      "banner-content";
+    padding: 20px;
+    gap: 30px;
+  }
+  .banner-image img {
+    width: calc(100% - 40px);
+  }
+  .banner-content,.banner-title , .banner-description{
+    text-align: center;
+  }
+}
