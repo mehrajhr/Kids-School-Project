@@ -84,7 +84,6 @@ header {
 /* banner design */
 .banner-content {
   grid-area: banner-content;
-  margin-right: 70px;
 }
 .banner-image {
   grid-area: banner-image;
@@ -94,6 +93,7 @@ header {
   grid-template-areas: "banner-content banner-image";
   align-items: center;
   margin-bottom: 60px;
+  gap: 70px;
 }
 .banner-title {
   font-size: 3.5rem;
@@ -126,7 +126,7 @@ header {
     margin: 0;
     padding: 20px;
   }
-  .border {
+  header > .border {
     display: block;
     border-top: 1px solid orange;
     margin-bottom: 10px;
@@ -138,8 +138,8 @@ header {
     padding: 20px;
     gap: 30px;
   }
-  .banner-image img {
-    width: calc(100% - 40px);
+  .banner-image img{
+    width: 100%;
   }
   .banner-content,.banner-title , .banner-description{
     text-align: center;
