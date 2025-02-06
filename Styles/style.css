@@ -221,7 +221,7 @@ main {
   .menu-bar {
     display: flex;
   }
-  .navbar {
+  .navbar,.standard-cariculum {
     margin: 0;
     padding: 20px;
   }
