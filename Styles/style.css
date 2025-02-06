@@ -308,13 +308,17 @@ header {
   padding: 30px;
   margin-top: 10px;
 }
+
+
+/* footer section styles */
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .nav-title,
   .nav-content-list,
   .nav-content > .btn-primary,
   .icon-container,
-  .icon {
+  .icon ,
+  .os-card-extra{
     display: none;
   }
   .menu-bar {
@@ -365,5 +369,24 @@ header {
   .card-description {
     font-size: 0.8rem;
     padding: 20px;
+  }
+  .os-card-container {
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  .os-card-1 , .os-card-2 , .os-card-3 , .os-card-4{
+    width: 190px;
+    height: 220px;
+  }
+  .btn-secondary{
+    width: 103.91px;
+    height: 22.83px;
+    font-size: 0.6rem;
+    margin-top: -18px;
+  }
+  .os-card-container .card-title{
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }
