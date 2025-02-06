@@ -10,13 +10,13 @@ body {
 .gray {
   color: rgb(254, 163, 1);
 }
-.gray-bg{
+.gray-bg {
   background-color: rgb(60, 216, 232);
 }
-.light-gray{
-  color: rgb(60, 216, 232)
+.light-gray {
+  color: rgb(60, 216, 232);
 }
-.light-gray-bg{
+.light-gray-bg {
   background-color: rgb(149, 178, 38);
 }
 
@@ -181,9 +181,9 @@ header {
 }
 
 /* Standard Curriculum section styles */
-.std-cur{
+.std-cur {
   background: url("../assets/bg.png");
-  background-size: 100%; 
+  background-size: 100%;
 }
 .card-container {
   display: flex;
@@ -250,8 +250,9 @@ header {
 }
 
 /* our stories styles */
-.div-section{
-  background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+.div-section {
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   width: 100%;
   padding-bottom: 70px;
 }
@@ -273,7 +274,10 @@ header {
 .os-card-4 {
   grid-area: os-card-4;
 }
-.os-card-1 , .os-card-2 , .os-card-3 , .os-card-4{
+.os-card-1,
+.os-card-2,
+.os-card-3,
+.os-card-4 {
   width: 290px;
   height: 301px;
 }
@@ -291,17 +295,18 @@ header {
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
-.card-image{
+.card-image {
   border-radius: 16px 16px 0px 0px;
   width: 100%;
 }
-.os-card-container .card-title ,  .os-card-container .card-description{
+.os-card-container .card-title,
+.os-card-container .card-description {
   text-align: left;
   padding: 20px;
 }
-.os-card-1 .card-title , 
-.os-card-2 .card-title  , 
-.os-card-3 .card-title  ,
+.os-card-1 .card-title,
+.os-card-2 .card-title,
+.os-card-3 .card-title,
 .os-card-4 .card-title {
   font-size: 1rem;
   font-weight: 700;
@@ -309,16 +314,80 @@ header {
   margin-top: 10px;
 }
 
-
 /* footer section styles */
+.footer {
+  width: 100%;
+  background-color: rgb(1, 172, 253);
+}
+.footer-section {
+  max-width: 1440px;
+  height: 519px;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.footer-content-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 50px;
+}
+.logo-name {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.name {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.logo-name .logo {
+  width: 100px;
+  height: 100px;
+}
+.logo img {
+  width: 100%;
+}
+.description p {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+.about-school , .keep {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 32px;
+}
+.list-item li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.list-item li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.logo-box{
+  display: flex;
+  gap: 20px;
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .nav-title,
   .nav-content-list,
   .nav-content > .btn-primary,
   .icon-container,
-  .icon ,
-  .os-card-extra{
+  .icon,
+  .os-card-extra {
     display: none;
   }
   .menu-bar {
@@ -371,21 +440,24 @@ header {
     padding: 20px;
   }
   .os-card-container {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 20px;
   }
-  .os-card-1 , .os-card-2 , .os-card-3 , .os-card-4{
+  .os-card-1,
+  .os-card-2,
+  .os-card-3,
+  .os-card-4 {
     width: 190px;
     height: 220px;
   }
-  .btn-secondary{
+  .btn-secondary {
     width: 103.91px;
     height: 22.83px;
     font-size: 0.6rem;
     margin-top: -18px;
   }
-  .os-card-container .card-title{
+  .os-card-container .card-title {
     font-size: 0.9rem;
     padding: 10px;
   }
