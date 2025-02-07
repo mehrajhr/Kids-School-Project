@@ -98,17 +98,19 @@ body {
 }
 /* header style */
 header {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   background-color: (247, 247, 247);
 }
 /* main styles */
+
 /* navbar styles */
 .navbar {
+  max-width: 1440px;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
+  /* margin: 30px 0; */
 }
 .menu-bar {
   display: none;
@@ -149,6 +151,8 @@ header {
 }
 .border {
   display: none;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* banner design */
@@ -159,6 +163,8 @@ header {
   grid-area: banner-image;
 }
 .banner {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: "banner-content banner-image";
   align-items: center;
@@ -315,70 +321,73 @@ header {
 }
 
 /* footer section styles */
-.footer {
-  width: 100%;
+footer {
+  width: 100vw;
   background-color: rgb(1, 172, 253);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-section {
   max-width: 1440px;
-  height: 519px;
+  height: 600px;
   margin: 0 auto;
-  display: grid;
-  /* grid-template-columns: repeat(3,1fr); */
-  grid-template-columns: 2fr 1fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-.footer-content-1 {
+.footer-content {
+  flex: 1;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  padding: 50px;
+  gap: 30px;
 }
-.logo-name {
+.footer-content-content {
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 10px;
 }
-.name {
-  color: white;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.logo-name .logo {
+.logo {
   width: 100px;
   height: 100px;
 }
 .logo img {
   width: 100%;
 }
-.description p {
-  color: rgb(255, 255, 255);
+.name {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.footer-content-content p {
   font-size: 1.25rem;
   font-weight: 400;
+  color: rgb(255, 255, 255);
   line-height: 25px;
 }
-.about-school , .keep {
+.footer-content-content h3 {
   font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 30px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 32px;
 }
-.list-item li {
+.footer-content-content ul li {
   list-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-.list-item li a {
+.footer-content-content ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
-.logo-box{
-  display: flex;
-  gap: 20px;
+.links {
+  justify-content: center;
+}
+#medium {
+  justify-content: left;
+  align-items: center;
 }
 /* responsive styles */
 @media screen and (max-width: 576px) {
@@ -460,5 +469,14 @@ header {
   .os-card-container .card-title {
     font-size: 0.9rem;
     padding: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100%;
   }
 }
