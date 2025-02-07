@@ -254,12 +254,15 @@ header {
   align-items: center;
   color: white;
 }
+.main{
+  width: 100vw;
+}
 
 /* our stories styles */
 .div-section {
   background: url(../assets/bg.png),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-  width: 100%;
+  width: 100vw;
   padding-bottom: 70px;
 }
 .os-card-extra {
